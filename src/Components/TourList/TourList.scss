@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.tour-list {
+    padding: 1rem;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+@media screen and ( min-width: 768px ) {
+    .tour-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.5rem;
+    }
+}
+
+@media screen and ( min-width: 980px ) {
+    .tour-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 85vw;
+    }
+}
+
+@media screen and ( min-width: 1040px ) {
+    .tour-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
